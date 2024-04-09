@@ -9,9 +9,7 @@ export default function App() {
     <SafeAreaProvider style={styles.frameContainer}>
       <StatusBar style="auto" />
       <View style={styles.container}>
-        <View style={styles.card}>
-          <Link href="/purpose">Purpose</Link>
-        </View>
+        <Text>Made it to purpose page</Text>
       </View>
     </SafeAreaProvider>
   );
