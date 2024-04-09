@@ -1,5 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import { StyleSheet, View } from "react-native";
 import { Link } from "expo-router";
 
 export default function App() {
