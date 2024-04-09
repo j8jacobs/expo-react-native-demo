@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Button, Image, StyleSheet, Text, View } from "react-native";
 import { GlobalStyles } from "./styles";
 import UnorderedList from "../components/UnorderedList";
 import Memoji from "../assets/memoji-1.png";
@@ -28,7 +28,13 @@ export default function Purpose() {
       />
       <Text style={GlobalStyles.br} />
       <Text style={GlobalStyles.h3}>Let's begin!</Text>
-      <Image source={Memoji} style={{ width: 200, height: 200 }} />
+      <View style={styles.nextCtr}>
+        <Image source={Memoji} />
+        <Button
+          title="Expo Navigation 👉🏽"
+          onPress={() => console.log("clicked")}
+        />
+      </View>
     </View>
   );
 }
@@ -38,5 +44,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     padding: 20,
+  },
+  nextCtr: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
   },
 });
