@@ -1,28 +1,32 @@
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import { Link } from "expo-router";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Link href="/purpose" style={styles.card}>
-        Purpose
-      </Link>
-      <Link href="/navigation" style={styles.card}>
-        Navigation
-      </Link>
-      <Link href="/ye" style={styles.card}>
-        Kanye West Quote Generator
-      </Link>
+    <View style={{ flex: 1 }}>
+      <ScrollView contentContainerStyle={styles.ctr}>
+        <Link href="/purpose" style={styles.card}>
+          Purpose
+        </Link>
+        <Link href="/navigation" style={styles.card}>
+          Navigation
+        </Link>
+        <Link href="/ye" style={styles.card}>
+          Kanye West Quote Generator
+        </Link>
+        <Link href="/barhop" style={styles.card}>
+          Build a Barhop
+        </Link>
+      </ScrollView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  ctr: {
     backgroundColor: "#fff",
     alignItems: "center",
-    paddingTop: 20,
+    paddingVertical: 20,
   },
   card: {
     width: "90%",
