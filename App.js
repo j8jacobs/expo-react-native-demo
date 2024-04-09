@@ -6,9 +6,11 @@ import Constants from "expo-constants";
 export default function App() {
   return (
     <SafeAreaProvider style={styles.frameContainer}>
+      <StatusBar style="auto" />
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <StatusBar style="auto" />
+        <View style={styles.card}>
+          <Text>Hello</Text>
+        </View>
       </View>
     </SafeAreaProvider>
   );
@@ -23,5 +25,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
+    paddingTop: 20,
+  },
+  card: {
+    width: "90%",
+    height: 200,
+    borderWidth: 1,
+    margin: 12,
+    padding: 12,
+    borderRadius: 8,
   },
 });
