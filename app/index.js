@@ -7,6 +7,9 @@ export default function App() {
       <Link href="/purpose" style={styles.card}>
         Purpose
       </Link>
+      <Link href="/navigation" style={styles.card}>
+        Navigation
+      </Link>
     </View>
   );
 }
