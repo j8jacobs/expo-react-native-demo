@@ -2,6 +2,7 @@ import { Button, Image, StyleSheet, Text, View } from "react-native";
 import { GlobalStyles } from "./styles";
 import UnorderedList from "../components/UnorderedList";
 import Memoji from "../assets/memoji-1.png";
+import { Link, router } from "expo-router";
 
 export default function Purpose() {
   return (
@@ -30,10 +31,12 @@ export default function Purpose() {
       <Text style={GlobalStyles.h3}>Let's begin!</Text>
       <View style={styles.nextCtr}>
         <Image source={Memoji} />
-        <Button
-          title="Expo Navigation 👉🏽"
-          onPress={() => console.log("clicked")}
-        />
+        <Link href="/navigation">
+          <Button
+            title="Expo Navigation 👉🏽"
+            onPress={() => router.push("/navigation")}
+          />
+        </Link>
       </View>
     </View>
   );
