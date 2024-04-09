@@ -10,6 +10,9 @@ export default function App() {
       <Link href="/navigation" style={styles.card}>
         Navigation
       </Link>
+      <Link href="/ye" style={styles.card}>
+        Kanye West Quote Generator
+      </Link>
     </View>
   );
 }
