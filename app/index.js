@@ -1,7 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import Constants from "expo-constants";
 import { Link } from "expo-router";
 
 export default function App() {
@@ -20,7 +19,6 @@ export default function App() {
 const styles = StyleSheet.create({
   frameContainer: {
     flex: 1,
-    marginTop: Constants.statusBarHeight,
   },
   container: {
     flex: 1,
