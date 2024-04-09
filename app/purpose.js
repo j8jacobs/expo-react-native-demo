@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import { GlobalStyles } from "./styles";
 import UnorderedList from "../components/UnorderedList";
+import Memoji from "../assets/memoji-1.png";
 
 export default function Purpose() {
   return (
     <View style={styles.container}>
       <Text style={GlobalStyles.h1}>Welcome!</Text>
+      <Text style={{ height: 8 }} />
       <Text style={GlobalStyles.p}>
         My name is Julian. I've a Fullstack developer seeking my next big
         product opportunity. My main goal is to find a product I'm excited to
@@ -24,6 +26,9 @@ export default function Purpose() {
           "Have some fun & try some new things",
         ]}
       />
+      <Text style={GlobalStyles.br} />
+      <Text style={GlobalStyles.h3}>Let's begin!</Text>
+      <Image source={Memoji} style={{ width: 200, height: 200 }} />
     </View>
   );
 }
