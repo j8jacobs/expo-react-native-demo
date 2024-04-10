@@ -1,13 +1,17 @@
-import { ScrollView, StyleSheet, View } from "react-native";
+import { Button, ScrollView, StyleSheet, View } from "react-native";
 import { Link } from "expo-router";
 
 export default function App() {
   return (
     <View style={{ flex: 1 }}>
-      <ScrollView contentContainerStyle={styles.ctr}>
+      <ScrollView contentContainerStyle={styles.ctr} data-testid="tabs">
         <Link href="/purpose" style={styles.card}>
           Purpose
         </Link>
+        {/* <Button
+          onPress={() => console.log("-- bytton pressed")}
+          title="Purpose"
+        /> */}
         <Link href="/navigation" style={styles.card}>
           Navigation
         </Link>

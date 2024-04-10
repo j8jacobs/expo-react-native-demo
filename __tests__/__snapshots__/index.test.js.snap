@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    contentContainerStyle={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "paddingVertical": 20,
+      }
+    }
+    data-testid="tabs"
+  >
+    <View>
+      <Text
+        href="/purpose"
+        onPress={[Function]}
+        role="link"
+        style={
+          {
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "height": 200,
+            "margin": 12,
+            "padding": 12,
+            "width": "90%",
+          }
+        }
+      >
+        Purpose
+      </Text>
+      <Text
+        href="/navigation"
+        onPress={[Function]}
+        role="link"
+        style={
+          {
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "height": 200,
+            "margin": 12,
+            "padding": 12,
+            "width": "90%",
+          }
+        }
+      >
+        Navigation
+      </Text>
+      <Text
+        href="/ye"
+        onPress={[Function]}
+        role="link"
+        style={
+          {
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "height": 200,
+            "margin": 12,
+            "padding": 12,
+            "width": "90%",
+          }
+        }
+      >
+        Kanye West Quote Generator
+      </Text>
+      <Text
+        href="/barhop"
+        onPress={[Function]}
+        role="link"
+        style={
+          {
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "height": 200,
+            "margin": 12,
+            "padding": 12,
+            "width": "90%",
+          }
+        }
+      >
+        Build a Barhop
+      </Text>
+    </View>
+  </RCTScrollView>
+</View>
+`;
