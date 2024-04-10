@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { View, Text, Button, TouchableOpacity, StyleSheet } from "react-native";
 import { NotesContext } from "../../lib/contexts/NotesContext";
 import { router } from "expo-router";
+import Btn from "../../lib/components/Btn";
 
 export default function ManageNotes() {
   const notes = useContext(NotesContext);
@@ -16,13 +17,7 @@ export default function ManageNotes() {
             </View>
           ))}
       </View>
-      <TouchableOpacity
-        style={styles.btn}
-        title="Refresh"
-        onPress={() => router.push("/notes/create")}
-      >
-        <Text style={{ fontSize: 18, color: "white" }}>Add Note</Text>
-      </TouchableOpacity>
+      <Btn text="Add Note" onPress={() => router.push("/notes/create")} />
     </View>
   );
 }
