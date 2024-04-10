@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { StyleSheet, Button, Text, View, TouchableOpacity } from "react-native";
-import { GlobalStyles } from "../styles";
-import { getRandom } from "../util";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { getRandom } from "../../lib/util";
 
 const COLORS = ["#EE8434", "#C95D63", "#AE8799", "#717EC3", "#496DDB"];
 

@@ -1,6 +1,6 @@
 import { Button, Image, StyleSheet, Text, View } from "react-native";
-import { GlobalStyles } from "./styles";
-import UnorderedList from "../components/UnorderedList";
+import { GlobalStyles } from "../lib/styles";
+import UnorderedList from "../lib/components/UnorderedList";
 import Memoji from "../assets/memoji-1.png";
 import { Link, router } from "expo-router";
 

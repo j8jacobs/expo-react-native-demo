@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { GlobalStyles } from "./styles";
+import { GlobalStyles } from "../lib/styles";
 
 export default function Navigation() {
   return (
