@@ -9,6 +9,12 @@ import Btn from "../../lib/components/Btn";
 
 export default function ManageNotes() {
   const { notes } = useContext(NotesContext);
+
+  const routeToCreateNote = () => {
+    router.push("/notes/create");
+    console.log("--- IVE BEEN CLICKED!");
+  };
+
   return (
     <View style={styles.ctr}>
       <Text>Manage Notes Page</Text>
@@ -20,7 +26,7 @@ export default function ManageNotes() {
             </View>
           ))}
       </View>
-      <Btn text="Add Note" onPress={() => router.push("/notes/create")} />
+      <Btn text="Add Note" onPress={routeToCreateNote} />
     </View>
   );
 }
