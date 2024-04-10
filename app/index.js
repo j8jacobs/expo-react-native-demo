@@ -4,7 +4,7 @@ import { Link } from "expo-router";
 export default function App() {
   return (
     <View style={{ flex: 1 }}>
-      <ScrollView contentContainerStyle={styles.ctr} data-testid="tabs">
+      <ScrollView contentContainerStyle={styles.ctr}>
         <Link href="/purpose" style={styles.card}>
           Purpose
         </Link>

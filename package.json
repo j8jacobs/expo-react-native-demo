@@ -7,7 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest"
+    "test": "jest --watch --coverage=false --changedSince=main",
+    "testDebug": "jest -o --watch --coverage=false",
+    "testFinal": "jest"
   },
   "dependencies": {
     "expo": "~50.0.14",
