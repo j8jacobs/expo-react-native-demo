@@ -1,6 +1,11 @@
+import "@testing-library/react-native/extend-expect";
 import React from "react";
 import renderer from "react-test-renderer";
 import { render, screen, fireEvent } from "@testing-library/react-native";
+// import {
+//   renderRouter,
+//   screen as RouterScreen,
+// } from "expo-router/testing-library";
 
 import App from "../app/index";
 
@@ -15,7 +20,7 @@ describe("<App />", () => {
     expect(tree).toMatchSnapshot();
   });
   // more complex testing (experiments)
-  it("All tabs are there", () => {
+  it("renders all tabs", () => {
     render(<App />);
     // getByText must match exact text
     // if it's not found, it will throw and the test will fail
@@ -23,6 +28,9 @@ describe("<App />", () => {
     screen.getByText("Navigation");
     screen.getByText("Kanye West Quote Generator");
     screen.getByText("Build a Barhop");
+    // const tabCtr = screen.getByTestId("tabs");
+    // console.log("tabCtr = ", tabCtr);
+    // expect(tabCtr.children.length).toBe(4);
   });
   xit("Purpose links properly", () => {
     // this only works for buttons, not the expo-router link
@@ -30,4 +38,5 @@ describe("<App />", () => {
     // render(<App />);
     // fireEvent.press(screen.getByText("Purpose"));
   });
+  it("routes properly", () => {});
 });

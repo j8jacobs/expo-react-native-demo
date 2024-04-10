@@ -9,7 +9,8 @@
     "web": "expo start --web",
     "test": "jest --watch --coverage=false --changedSince=main",
     "testDebug": "jest -o --watch --coverage=false",
-    "testFinal": "jest"
+    "testFinal": "jest",
+    "test:clearCache": "jest --clearCache"
   },
   "dependencies": {
     "expo": "~50.0.14",
@@ -18,16 +19,17 @@
     "expo-location": "~16.5.5",
     "expo-router": "~3.4.8",
     "expo-status-bar": "~1.11.1",
+    "jest": "^29.3.1",
+    "jest-expo": "~50.0.4",
     "react": "18.2.0",
     "react-native": "0.73.6",
     "react-native-maps": "1.10.0",
     "react-native-safe-area-context": "4.8.2",
-    "react-native-screens": "~3.29.0",
-    "jest-expo": "~50.0.4",
-    "jest": "^29.3.1"
+    "react-native-screens": "~3.29.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.4.5"
   },
   "jest": {
@@ -43,6 +45,9 @@
       "!**/babel.config.js",
       "!**/jest.setup.js",
       "!.expo/**"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.js"
     ]
   },
   "private": true
