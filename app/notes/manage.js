@@ -1,16 +1,19 @@
+/**
+ * Contrived example of context that shouldn't actually be context.
+ */
 import { useContext } from "react";
-import { View, Text, Button, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { NotesContext } from "../../lib/contexts/NotesContext";
 import { router } from "expo-router";
 import Btn from "../../lib/components/Btn";
 
 export default function ManageNotes() {
-  const notes = useContext(NotesContext);
+  const { notes } = useContext(NotesContext);
   return (
     <View style={styles.ctr}>
       <Text>Manage Notes Page</Text>
       <View>
-        {notes?.length &&
+        {notes?.length > 0 &&
           notes.map((n, i) => (
             <View key={`n_${i}`}>
               <Text>{n}</Text>
