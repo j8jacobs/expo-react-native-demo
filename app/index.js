@@ -21,6 +21,9 @@ export default function App() {
         <Link href="/barhop" style={styles.card}>
           Build a Barhop
         </Link>
+        <Link href="/notes/manage" style={styles.card}>
+          Manage Notes
+        </Link>
       </ScrollView>
     </View>
   );
