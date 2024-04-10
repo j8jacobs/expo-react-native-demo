@@ -40,3 +40,38 @@ describe("<App />", () => {
   });
   it("routes properly", () => {});
 });
+
+// I don't understand how to test expo-router, but here's the setup
+//import { renderRouter, screen } from "expo-router/testing-library";
+// describe("2 <App />", () => {
+//   it("should test routing", () => {
+//     console.log("theer...");
+//     const MockComponent = jest.fn(() => <View />);
+
+//     renderRouter(
+//       {
+//         index: MockComponent,
+//         "directory/a": MockComponent,
+//         "(group)/b": MockComponent,
+//       },
+//       {
+//         // initialUrl: "/directory/a",
+//         initialUrl: "/(group)/a",
+//       }
+//     );
+
+//     expect(screen).toHavePathname("/(group)/a");
+//   });
+
+//   xit("should test actual routing", () => {
+//     const output = renderRouter(
+//       {
+//         "/": App,
+//       },
+//       {
+//         initialUrl: "/",
+//       }
+//     );
+//     console.log(output);
+//   });
+// });
