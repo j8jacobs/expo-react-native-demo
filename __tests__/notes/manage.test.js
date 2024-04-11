@@ -1,11 +1,3 @@
-jest.mock("expo-router", () => {
-  return {
-    router: {
-      push: jest.fn(),
-    },
-  };
-});
-
 import ManageNotes from "../../app/notes/manage";
 import renderer from "react-test-renderer";
 import {
@@ -14,8 +6,8 @@ import {
   fireEvent,
   waitFor,
 } from "@testing-library/react-native";
-import { renderRouter, ExpoRouterscreen } from "expo-router/testing-library";
-import { View, Text } from "react-native";
+import { renderRouter } from "expo-router/testing-library";
+import { View } from "react-native";
 import { router } from "expo-router"; // This is how you'd use router in your component, not in your test
 
 describe("<ManageNotes />", () => {
@@ -40,9 +32,7 @@ describe("<ManageNotes />", () => {
 
     render(<ManageNotes />);
     await waitFor(() => {
-      console.log("waiting for...");
       expect(screen.getByText("Add Note")).toBeTruthy();
-      console.log("done");
     });
     fireEvent.press(screen.getByText("Add Note"));
     expect(router.push).toHaveBeenCalledWith("/notes/create");

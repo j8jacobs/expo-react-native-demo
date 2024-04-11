@@ -19,3 +19,11 @@ jest.mock("expo-linking", () => {
   };
   return module;
 });
+
+jest.mock("expo-router", () => {
+  return {
+    router: {
+      push: jest.fn(),
+    },
+  };
+});
