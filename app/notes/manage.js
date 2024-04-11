@@ -12,7 +12,6 @@ export default function ManageNotes() {
 
   const routeToCreateNote = () => {
     router.push("/notes/create");
-    console.log("--- IVE BEEN CLICKED!");
   };
 
   return (

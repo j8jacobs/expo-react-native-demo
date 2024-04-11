@@ -24,6 +24,9 @@ export default function App() {
         <Link href="/notes/manage" style={styles.card}>
           Manage Notes
         </Link>
+        <Link href="/animations" style={styles.card}>
+          Animations
+        </Link>
       </ScrollView>
     </View>
   );

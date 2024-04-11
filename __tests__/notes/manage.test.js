@@ -1,3 +1,12 @@
+//www.loom.com/share/d1be74d2f88e48feb7c55fd6b6c3ce72
+jest.mock("expo-router", () => {
+  return {
+    router: {
+      push: jest.fn(),
+    },
+  };
+});
+
 import ManageNotes from "../../app/notes/manage";
 import renderer from "react-test-renderer";
 import {
