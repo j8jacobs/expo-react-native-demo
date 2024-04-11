@@ -1,9 +1,12 @@
 import { Text, View } from "react-native";
+import FadeInView from "../../lib/components/FadeInView";
 
 export default function Animations() {
   return (
     <View>
-      <Text>Animation Page</Text>
+      <FadeInView>
+        <Text>Animation Page</Text>
+      </FadeInView>
     </View>
   );
 }
